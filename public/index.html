@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DestinationFinder — Explore the World's Most Breathtaking Forest Tours</title>
+    <meta name="description" content="Discover unforgettable forest tour experiences across China, Japan, Africa, Brazil, and Serbia. Book your next adventure with DestinationFinder.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="index.html" class="logo">Destination<span>Finder</span></a>
+
+        <div class="social-media">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="bx bxl-telegram"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram-alt"></i></a>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="destinations.html">Destinations</a>
+            <a href="booking.html">Booking</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="slider">
+            <div class="slide active">
+                <img src="images/china.jpg" alt="Mist in the green forest of China">
+                <div class="left-info">
+                    <div class="penetrte-blur">
+                        <h1>Chi</h1>
+                    </div>
+                    <div class="content">
+                        <h3>01. China Forest Tour</h3>
+                        <p>Explore the serene, misty ancient forests. Walk among towering trees and discover a landscape steeped in centuries of rich history and profound tranquility.</p>
+                        <a href="destinations.html#china" class="btn">More Details</a>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <h1>na</h1>
+                    <h3>forest</h3>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/japan.jpg" alt="Lush green moss and trees in Japan">
+                <div class="left-info">
+                    <div class="penetrte-blur">
+                        <h1>Jap</h1>
+                    </div>
+                    <div class="content">
+                        <h3>02. Japan Forest Tour</h3>
+                        <p>Wander through tranquil bamboo groves and vibrant moss gardens. Experience the deep, meditative peace that Japanese nature has to offer.</p>
+                        <a href="destinations.html#japan" class="btn">More Details</a>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <h1>an</h1>
+                    <h3>forest</h3>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/africa.jpg" alt="Dark, moody African woodland">
+                <div class="left-info">
+                    <div class="penetrte-blur">
+                        <h1>Afr</h1>
+                    </div>
+                    <div class="content">
+                        <h3>03. Africa Forest Tour</h3>
+                        <p>Discover the untamed beauty of African woodlands. Journey into deep, moody landscapes teeming with exotic flora and elusive wildlife.</p>
+                        <a href="destinations.html#africa" class="btn">More Details</a>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <h1>ica</h1>
+                    <h3>forest</h3>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/brazil.jpg" alt="Dense, dark Amazon rainforest in Brazil">
+                <div class="left-info">
+                    <div class="penetrte-blur">
+                        <h1>Bra</h1>
+                    </div>
+                    <div class="content">
+                        <h3>04. Brazil Forest Tour</h3>
+                        <p>Immerse yourself in the lungs of the Earth. The Amazon offers an unparalleled adventure into the world's most vibrant and dense ecosystems.</p>
+                        <a href="destinations.html#brazil" class="btn">More Details</a>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <h1>zil</h1>
+                    <h3>forest</h3>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/serbia.jpg" alt="Mountainous forest landscape in Serbia">
+                <div class="left-info">
+                    <div class="penetrte-blur">
+                        <h1>Ser</h1>
+                    </div>
+                    <div class="content">
+                        <h3>05. Serbia Forest Tour</h3>
+                        <p>Experience the hidden gems of the Balkans. Traverse dramatic mountain gorges, pristine green rivers, and untouched alpine forests.</p>
+                        <a href="destinations.html#serbia" class="btn">More Details</a>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <h1>bia</h1>
+                    <h3>forest</h3>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <span class="prev-btn" id="prevBtn" aria-label="Previous slide">
+                    <i class="bx bx-chevron-left"></i>
+                </span>
+                <span class="next-btn" id="nextBtn" aria-label="Next slide">
+                    <i class="bx bx-chevron-right"></i>
+                </span>
+            </div>
+
+            <div class="slide-progress">
+                <div class="slide-progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

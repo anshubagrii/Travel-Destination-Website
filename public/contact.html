@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — DestinationFinder | Get in Touch</title>
+    <meta name="description"
+        content="Have a question or need help planning your forest tour? Reach out to DestinationFinder — we'd love to hear from you.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header scrolled" id="header">
+        <a href="index.html" class="logo">Destination<span>Finder</span></a>
+
+        <div class="social-media">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
+                    class="bx bxl-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
+                    class="bx bxl-facebook"></i></a>
+            <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i
+                    class="bx bxl-telegram"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                    class="bx bxl-instagram-alt"></i></a>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="destinations.html">Destinations</a>
+            <a href="booking.html">Booking</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <img src="images/serbia.jpg" alt="Contact hero">
+        <div class="page-hero-content">
+            <h1>Contact Us</h1>
+            <p>Questions, ideas, or ready to plan? We'd love to hear from you.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="form-section">
+                <div class="form-wrapper animate-on-scroll">
+                    <h3>Send Us a Message</h3>
+                    <p>Fill out the form and our team will respond within 24 hours.</p>
+
+                    <form id="contactForm" novalidate>
+                        <!-- Web3Forms config (get your free key at https://web3forms.com) -->
+                        <input type="hidden" name="access_key" value="7c5c5f50-2d3e-4c8b-86cb-d52a44b7c830">
+                        <input type="hidden" name="from_name" value="DestinationFinder Contact">
+
+                        <div class="form-row">
+                            <div class="form-group" id="contactNameGroup">
+                                <label for="contactName">Full Name *</label>
+                                <input type="text" id="contactName" name="name" placeholder="Jane Smith" required>
+                                <span class="error-msg">Please enter your name (min 2 characters).</span>
+                            </div>
+                            <div class="form-group" id="contactEmailGroup">
+                                <label for="contactEmail">Email *</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="jane@example.com"
+                                    required>
+                                <span class="error-msg">Please enter a valid email address.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="contactSubjectGroup">
+                            <label for="contactSubject">Subject *</label>
+                            <input type="text" id="contactSubject" name="subject" placeholder="What's this about?"
+                                required>
+                            <span class="error-msg">Please enter a subject (min 3 characters).</span>
+                        </div>
+
+                        <div class="form-group" id="contactMessageGroup">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="message" placeholder="Tell us what's on your mind..."
+                                required></textarea>
+                            <span class="error-msg">Message must be at least 10 characters.</span>
+                        </div>
+
+                        <button type="submit" class="form-submit-btn" id="contactSubmitBtn">
+                            <i class="bx bx-send"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="info-sidebar animate-on-scroll">
+                    <div class="info-card">
+                        <div class="icon-wrap"><i class="bx bx-map"></i></div>
+                        <h4>Our Office</h4>
+                        <p>123 Forest Trail Avenue<br>Green Valley, CA 90210<br>United States</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon-wrap"><i class="bx bx-phone"></i></div>
+                        <h4>Phone</h4>
+                        <p><a href="tel:+11234567890">+1 (123) 456-7890</a></p>
+                        <p><a href="tel:+11234567891">+1 (123) 456-7891</a></p>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon-wrap"><i class="bx bx-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:hello@destinationfinder.com">hello@destinationfinder.com</a></p>
+                        <p><a href="mailto:bookings@destinationfinder.com">bookings@destinationfinder.com</a></p>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon-wrap"><i class="bx bx-time"></i></div>
+                        <h4>Office Hours</h4>
+                        <p>Mon – Fri: 9:00 AM – 6:00 PM<br>Sat: 10:00 AM – 4:00 PM<br>Sun: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="section-padding" style="padding-top: 0;">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="subtitle">Location</span>
+                <h2>Find Us On The Map</h2>
+            </div>
+            <div class="map-section animate-on-scroll">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064e72a0001%3A0x1df9d1c8d0b7bee6!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1691234567890!5m2!1sen!2sus"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="DestinationFinder Office Location">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <h4>DestinationFinder</h4>
+                    <p>We curate exceptional forest tour experiences that connect travelers with the world's most
+                        spectacular natural landscapes. Sustainable, authentic, unforgettable.</p>
+                    <div class="footer-socials">
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i
+                                class="bx bxl-twitter"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i
+                                class="bx bxl-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i
+                                class="bx bxl-instagram-alt"></i></a>
+                        <a href="https://telegram.org" target="_blank" rel="noopener noreferrer"><i
+                                class="bx bxl-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="booking.html">Book a Tour</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="destinations.html#china">China Forest</a></li>
+                        <li><a href="destinations.html#japan">Japan Forest</a></li>
+                        <li><a href="destinations.html#africa">Africa Forest</a></li>
+                        <li><a href="destinations.html#brazil">Brazil Forest</a></li>
+                        <li><a href="destinations.html#serbia">Serbia Forest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe and get the latest tour deals, travel tips, and destination guides.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit"><i class="bx bx-send"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <a href="index.html">DestinationFinder</a> by Devanshu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

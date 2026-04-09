@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Tour — DestinationFinder | Reserve Your Forest Adventure</title>
+    <meta name="description"
+        content="Book your dream forest tour. Choose from China, Japan, Africa, Brazil, or Serbia. Easy booking, instant confirmation.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header scrolled" id="header">
+        <a href="index.html" class="logo">Destination<span>Finder</span></a>
+
+        <div class="social-media">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
+                    class="bx bxl-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
+                    class="bx bxl-facebook"></i></a>
+            <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i
+                    class="bx bxl-telegram"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                    class="bx bxl-instagram-alt"></i></a>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="destinations.html">Destinations</a>
+            <a href="booking.html" class="active">Booking</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <img src="images/japan.jpg" alt="Booking hero">
+        <div class="page-hero-content">
+            <h1>Book Your Tour</h1>
+            <p>Reserve your spot on one of our unforgettable forest adventures. It only takes a minute.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Booking</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="form-section">
+                <div class="form-wrapper animate-on-scroll">
+                    <h3>Reservation Details</h3>
+                    <p>Fill out the form below and we'll confirm your booking within 24 hours.</p>
+
+                    <form id="bookingForm" novalidate>
+                        <!-- Web3Forms config (get your free key at https://web3forms.com) -->
+                        <input type="hidden" name="access_key" value="7c5c5f50-2d3e-4c8b-86cb-d52a44b7c830">
+                        <input type="hidden" name="subject" value="New Tour Booking — DestinationFinder">
+                        <input type="hidden" name="from_name" value="DestinationFinder Booking">
+
+                        <div class="form-row">
+                            <div class="form-group" id="nameGroup">
+                                <label for="bookingName">Full Name *</label>
+                                <input type="text" id="bookingName" name="name" placeholder="John Doe" required>
+                                <span class="error-msg">Please enter your name (min 2 characters).</span>
+                            </div>
+                            <div class="form-group" id="emailGroup">
+                                <label for="bookingEmail">Email *</label>
+                                <input type="email" id="bookingEmail" name="email" placeholder="john@example.com"
+                                    required>
+                                <span class="error-msg">Please enter a valid email address.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group" id="phoneGroup">
+                                <label for="bookingPhone">Phone</label>
+                                <input type="tel" id="bookingPhone" name="phone" placeholder="+1 234 567 890">
+                            </div>
+                            <div class="form-group" id="destGroup">
+                                <label for="bookingDest">Destination *</label>
+                                <select id="bookingDest" name="destination" required>
+                                    <option value="">Select destination</option>
+                                    <option value="china">China Forest Tour — $1,299</option>
+                                    <option value="japan">Japan Forest Tour — $1,499</option>
+                                    <option value="africa">Africa Forest Tour — $2,199</option>
+                                    <option value="brazil">Brazil Forest Tour — $1,899</option>
+                                    <option value="serbia">Serbia Forest Tour — $899</option>
+                                </select>
+                                <span class="error-msg">Please select a destination.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group" id="checkinGroup">
+                                <label for="bookingCheckin">Check-in Date *</label>
+                                <input type="date" id="bookingCheckin" name="checkIn" required>
+                                <span class="error-msg">Please select a check-in date.</span>
+                            </div>
+                            <div class="form-group" id="checkoutGroup">
+                                <label for="bookingCheckout">Check-out Date *</label>
+                                <input type="date" id="bookingCheckout" name="checkOut" required>
+                                <span class="error-msg">Check-out must be after check-in.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="guestsGroup">
+                            <label for="bookingGuests">Group Size *</label>
+                            <input type="number" id="bookingGuests" name="guests" min="1" max="20"
+                                placeholder="Number of travelers" required>
+                            <span class="error-msg">Group size must be 1–20.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bookingRequests">Special Requests</label>
+                            <textarea id="bookingRequests" name="requests"
+                                placeholder="Any dietary needs, accessibility requirements, or special wishes..."></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit-btn" id="bookingSubmitBtn">
+                            <i class="bx bx-check-circle"></i> Confirm Booking
+                        </button>
+                    </form>
+                </div>
+
+                <div class="info-sidebar animate-on-scroll">
+                    <div class="info-card">
+                        <div class="icon-wrap"><i class="bx bx-shield-quarter"></i></div>
+                        <h4>Secure Booking</h4>
+                        <p>Your information is encrypted and secure. We never share your data with third parties.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon-wrap"><i class="bx bx-revision"></i></div>
+                        <h4>Free Cancellation</h4>
+                        <p>Cancel up to 7 days before your trip for a full refund. Plans change — we understand.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon-wrap"><i class="bx bx-support"></i></div>
+                        <h4>24/7 Support</h4>
+                        <p>Our travel experts are available around the clock to help you before, during, and after your
+                            trip.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon-wrap"><i class="bx bx-star"></i></div>
+                        <h4>Best Price Guarantee</h4>
+                        <p>Find a lower price elsewhere? We'll match it. No questions asked.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <h4>DestinationFinder</h4>
+                    <p>We curate exceptional forest tour experiences that connect travelers with the world's most
+                        spectacular natural landscapes. Sustainable, authentic, unforgettable.</p>
+                    <div class="footer-socials">
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i
+                                class="bx bxl-twitter"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i
+                                class="bx bxl-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i
+                                class="bx bxl-instagram-alt"></i></a>
+                        <a href="https://telegram.org" target="_blank" rel="noopener noreferrer"><i
+                                class="bx bxl-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="booking.html">Book a Tour</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="destinations.html#china">China Forest</a></li>
+                        <li><a href="destinations.html#japan">Japan Forest</a></li>
+                        <li><a href="destinations.html#africa">Africa Forest</a></li>
+                        <li><a href="destinations.html#brazil">Brazil Forest</a></li>
+                        <li><a href="destinations.html#serbia">Serbia Forest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe and get the latest tour deals, travel tips, and destination guides.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit"><i class="bx bx-send"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <a href="index.html">DestinationFinder</a> by Devanshu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+
+</html>
